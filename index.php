@@ -6,8 +6,10 @@
     <div class="aboutBlock block">
       <div class="banners">
         <ul>
-          <li><a href="about.html"><img src="http://example.com/wp-content/themes/hotel/images/home/bnr_about.png" height="97" width="320" alt="ホテル紹介"></a></li>
-          <li><a href="access.html"><img src="images/home/bnr_access.png" height="97" width="320" alt="アクセス"></a></li>
+          <li><a href="about.html">
+          <img src="http://example.com/wp-content/themes/ishigaki/images/home/bnr_about.png" height="97" width="320" alt="ホテル紹介"></a></li>
+          <li><a href="access.html">
+          <img src="images/home/bnr_access.png" height="97" width="320" alt="アクセス"></a></li>
         </ul>
       </div>
     </div><!-- /.aboutBlock -->
@@ -32,7 +34,8 @@
           </p>
           <p>[<a href="single.html">続きを読む</a>]</p>
         </div>
-        <figure><a href="single.html"><img src="images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
+        <figure><a href="single.html">
+        <img src="images/dummy/180x180-3.png" height="180" width="180" alt=""></a></figure>
       </article><!-- /.news -->
 
       <article class="news">
