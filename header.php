@@ -7,7 +7,19 @@
 <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
-<title><?php boginfo('name'); ?></title>
+<title>
+<?php
+if (!is_home() ){
+  wp_title('-', true, 'right');
+}
+boginfo('name');
+ ?>
+ </title>
+<body <?php body_class(); ?>>
+<?php
+wp_enqueue_script('jquery');
+wp_head();
+?>
 </head>
 <body <?php body_class(); ?>>
     <header class="globalHeader">
@@ -21,7 +33,9 @@
         </div>
     </header><!-- /.globalHeader -->
 
+<?php if ( is_home() ): ?>
     <div class="homeVisual"><span>石垣島でのんびりゆったりと。</span></div>
+<?php endif; ?>
 
     <nav class="globalNavi">
         <ul>
