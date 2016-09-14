@@ -39,3 +39,4 @@ else : //記事がなかった場合
   <?php
   endif;
   ?>
+  <?php if ( function_exists( 'wp_pagenavi')){wp_pagenavi(); } ?>
