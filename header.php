@@ -24,12 +24,9 @@ wp_head();
 <body <?php body_class(); ?>>
     <header class="globalHeader">
         <div class="inner">
-            <h1><a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo01.png" height="40" width="300" alt="ホテル・技評リゾート石垣島"></a></h1>
+            <h1><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/common/logo01.png" height="40" width="300" alt="ホテル・技評リゾート石垣島"></a></h1>
             <p class="description"><?php bloginfo('description'); ?></p>
-            <form action="" method="get" class="searchform">
-                <input type="text" value="" name="s" id="s" placeholder="サイト内検索">
-                <input type="submit" id="searchSubmit" value="">
-            </form>
+            <?php get_search_form(); ?>
         </div>
     </header><!-- /.globalHeader -->
 
@@ -40,7 +37,7 @@ wp_head();
     <nav class="globalNavi">
 
       <?php
-      $args = array (
+      $args = array(
         'menu' => 'global-navigation', //管理画面で作成したメニューの名前
         'container' => false, //<ul>タグを囲んでいる<div>タグを削除
         );
