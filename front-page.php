@@ -6,9 +6,9 @@
     <div class="aboutBlock block">
       <div class="banners">
         <ul>
-          <li><a href="about.html">
+          <li><a href="<?php echo get_permalink(39); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/images/home/bnr_about.png" height="97" width="320" alt="ホテル紹介"></a></li>
-          <li><a href="access.html">
+          <li><a href="<?php echo get_permalink(47); ?>">
           <img src="<?php echo get_template_directory_uri(); ?>/images/home/bnr_access.png" height="97" width="320" alt="アクセス"></a></li>
         </ul>
       </div>
