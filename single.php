@@ -23,6 +23,8 @@ while ( have_posts() ) : the_post();
                     <time datetime="-m-d'); ?>"><?php the_time('Y年m月d日(l)'); ?></time>
                 </div><!-- /.entryInfo -->
 
+              <?php comments_template(); ?>
+
                 <section class="content">
                 <?php the_content(); ?>
                 </section><!-- /.content -->
