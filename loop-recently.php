@@ -1,8 +1,17 @@
-<?php if ( have_posts() ) : ?>
+<?php
+ if ( !is_home() ) : //トップページの時は適用しない
+ $args = array(
+  'post_type' => 'post', //投稿記事だけを指定
+  'posts_per_page' => 3, //最新記事を3件表示
+  );
+ $the_query = new WP_Query( $args );
+ if ( $the_query->have_posts() ) :
+  ?>
+
 <section class="recentEntries">
     <h1 class="type-C">最新記事</h1>
     <div class="entries">
-        <?php while ( have_posts() ) : the_post(); ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <section class="entry">
             <a href="<?php the_permalink() ?>">
             <?php if( has_post_thumbnail() ): ?>
@@ -19,4 +28,7 @@
         <?php endwhile; ?>
     </div><!-- /.entries -->
 </section><!-- /.recentEntries -->
-<?php endif; ?>
+<?php
+endif;
+endif;
+ ?>
