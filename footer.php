@@ -1,6 +1,6 @@
 <footer class="globalFooter">
         <div class="pageTop">
-            <p><a href="javascript:void(0);" id="js-pagetop"><img src="images/common/pagetop01.png" height="41" width="41" alt=""></a></p>
+            <p><a href="javascript:void(0);" id="js-pagetop"><img src="<?php echo get_template_directory_uri(); ?>/images/common/pagetop01.png" height="41" width="41" alt=""></a></p>
         </div>
         <div class="inner">
             <dl class="address">

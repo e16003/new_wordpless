@@ -9,6 +9,5 @@
                     );
                   wp_get_archives( $args );
                   ?>
-
                     </ul><!-- /.archives -->
                 </section><!-- /.recentArchives -->
